@@ -1,0 +1,31 @@
+# Environment variables (NEVER commit this file!)
+.env
+.env.local
+.env.*.local
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# ChromaDB vector store (can be rebuilt)
+chroma_db/
+
+# Streamlit cache
+.streamlit/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temp / test scripts (not for production)
+tmp_test_groq.py
+tmp_test_groq_order.py
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
