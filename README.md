@@ -3,22 +3,22 @@
 **Eventify** is a smart university portal built with **Streamlit** that helps students of Banasthali Vidyapith explore clubs, fests, events, and campus life — powered by an AI chatbot.
 
 ## ✨ Features
-- 🤖 **AI Chatbot** — Powered by Groq (LLaMA 3), answers questions about clubs, fests, events, and campus policies
-- 📅 **Event Calendar** — View and track upcoming workshops and university events
-- 🗺️ **Campus Maps** — GPS navigation to key university locations
-- 🏛️ **Clubs Directory** — Browse all official and non-official university clubs
-- 📝 **Event Registration Forms** — Quick access to event registration links
-- 🎭 **Five-Fold Education** — Physical, Aesthetic, Practical, Moral, and Service activities
-- 🔐 **User Authentication** — Secure login, signup, OTP verification & forgot password
-- 👨‍💼 **Admin Panel** — Manage events, notices, and registration forms
+-  **AI Chatbot** — Powered by Groq (LLaMA 3), answers questions about clubs, fests, events, and campus policies
+- **Event Calendar** — View and track upcoming workshops and university events
+- **Campus Maps** — GPS navigation to key university locations
+- **Clubs Directory** — Browse all official and non-official university clubs
+- **Event Registration Forms** — Quick access to event registration links
+- **Five-Fold Education** — Physical, Aesthetic, Practical, Moral, and Service activities
+- **User Authentication** — Secure login, signup, OTP verification & forgot password
+- **Admin Panel** — Manage events, notices, and registration forms
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - **Frontend & Backend**: Streamlit (Python)
 - **Database**: MySQL
 - **AI**: Groq API (LLaMA 3.1 8B Instant)
 - **Email**: Gmail SMTP (OTP verification)
 
-## 🚀 Setup & Installation
+##  Setup & Installation
 
 ### 1. Clone the repository
 ```bash
@@ -72,7 +72,7 @@ streamlit run page.py
 └── background/          # Background images
 ```
 
-## ⚠️ Environment Variables
+##  Environment Variables
 Never commit your `.env` file. Use `.env.example` as a reference.
 
 ## 📜 License
