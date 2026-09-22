@@ -254,7 +254,7 @@ def get_bot_response(user_text, chat_history=[]):
             messages[-1]['content'] = strict_prompt
             
         response = _groq_client.chat.completions.create(
-            model='llama-3.1-8b-instant', 
+            model='openai/gpt-oss-20b', 
             messages=messages, 
             max_tokens=1000, 
             temperature=0.0  
@@ -265,7 +265,7 @@ def get_bot_response(user_text, chat_history=[]):
         try:
             # Fallback 1 to avoid rate limits during presentation
             response = _groq_client.chat.completions.create(
-                model='llama3-8b-8192', 
+                model='openai/gpt-oss-20b', 
                 messages=messages, 
                 max_tokens=1000, 
                 temperature=0.0  
@@ -276,7 +276,7 @@ def get_bot_response(user_text, chat_history=[]):
             try:
                 # Fallback 2
                 response = _groq_client.chat.completions.create(
-                    model='llama-3.1-8b-instant', 
+                    model='openai/gpt-oss-20b', 
                     messages=messages, 
                     max_tokens=300, 
                     temperature=0.0  
@@ -579,7 +579,7 @@ def save_chat_to_db(email, user_msg, bot_msg):
         try:
             title_prompt = f"Summarize this prompt into a very short 2 to 4 word title. No punctuation. Prompt: {user_msg}"
             res = _groq_client.chat.completions.create(
-                model='llama-3.1-8b-instant',
+                model='openai/gpt-oss-20b',
                 messages=[{"role": "user", "content": title_prompt}],
                 max_tokens=10,
                 temperature=0.3
