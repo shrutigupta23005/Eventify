@@ -15,7 +15,8 @@
 ##  Tech Stack
 - **Frontend & Backend**: Streamlit (Python)
 - **Database**: MySQL
-- **AI**: Groq API (LLaMA 3.1 8B Instant)
+- - **GROQ_API_KEY** — Get from [Groq Console](https://console.groq.com/)
+- **Model** — `openai/gpt-oss-20b`
 - **Email**: Gmail SMTP (OTP verification)
 
 ##  Setup & Installation
@@ -30,11 +31,15 @@ cd eventify
 ```bash
 pip install -r requirements.txt
 ```
-
+```markdown
 ### 3. Configure environment variables
-```bash
-cp .env.example .env
-```
+
+#### Windows
+
+Copy `.env.example` to `.env`:
+
+```cmd
+copy .env.example .env
 Edit `.env` and fill in your actual values:
 - `GROQ_API_KEY` — Get from [console.groq.com](https://console.groq.com)
 - `DB_PASSWORD` — Your MySQL root password
